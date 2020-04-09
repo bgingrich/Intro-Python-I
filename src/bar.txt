@@ -1,0 +1,3 @@
+Learning about Python
+It should be interesting
+Hopefully it goes well

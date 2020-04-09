@@ -8,9 +8,14 @@ Take a look at https://docs.python.org/3/tutorial/datastructures.html#list-compr
 for more info regarding list comprehensions.
 """
 
+import math
+
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
-y = []
+y =[]
+
+for i in range(5):
+    y.append(i + 1)
 
 print (y)
 
@@ -19,6 +24,9 @@ print (y)
 
 y = []
 
+for i in range(10):
+    y.append(math.pow(i, 3))
+
 print(y)
 
 # Write a list comprehension to produce the uppercase version of all the
@@ -26,7 +34,7 @@ print(y)
 
 a = ["foo", "bar", "baz"]
 
-y = []
+y = [x.upper() for x in a]
 
 print(y)
 
@@ -36,6 +44,6 @@ print(y)
 x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
-y = []
+y = [t for t in x if int(t)% 2 == 0]
 
 print(y)
